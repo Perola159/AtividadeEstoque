@@ -32,5 +32,23 @@ namespace AtividadeEstoqueDolarPagamneto
             Console.WriteLine($"O valor de A é: {VarA}");
             Console.WriteLine($"O valor de B é: {VarB}");
         }
+
+
+        public void Modulo()
+        {
+            Console.WriteLine();
+            VarA = int.Parse(Console.ReadLine());
+
+
+            if(VarA >= 0 )
+            {
+                VarA = VarA;
+                Console.WriteLine("O Valor da variavel é: " + VarA);
+            }else if (VarA < 0)
+            {
+                VarA = VarA * (-1);
+                Console.WriteLine("O módulo do valor é" + VarA);
+            }
+        }
     }
 }
